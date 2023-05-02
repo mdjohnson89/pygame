@@ -1,7 +1,7 @@
-import pygame, sys, random
+ import pygame, sys, random
 '''---------------------------------CLASS CODE/SPRITES--------------------'''
 class Blob(pygame.sprite.Sprite):
-    
+
     def __init__(self):
         super().__init__()
         self.image = pygame.transform.scale(pygame.image.load('Assets/sprite_0.png'), (150, 150))
@@ -79,7 +79,7 @@ while True:
         asteroid_group.add(Asteroid('Assets/Asteroid_05.GIF', random.randrange(0, screen_width)))
     if SPAWN_COUNT > 1000:
         SPAWN_COUNT = 0
-        
+
     #Handling input (EVENTS)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -95,7 +95,7 @@ while True:
     blob_group.draw(screen)
     asteroid_group.draw(screen)
 
-    # Updating the window 
+    # Updating the window
     blob_group.update()
     asteroid_group.update()
     pygame.display.flip()

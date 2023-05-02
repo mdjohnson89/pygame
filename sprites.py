@@ -73,10 +73,9 @@ def check_laser(laser, asteroid):
         for a in asteroid:
             if pygame.sprite.collide_rect(a, l):
                 a.kill()
-                l.kill()
+                #l.kill()
                 pygame.event.post(pygame.event.Event(DESTROID))
-    
-            
+
 
 def check_ship(ship, asteroid):
     ''' Checks for spaceship/asteroid collisions '''
