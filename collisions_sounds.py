@@ -1,7 +1,6 @@
- import pygame, sys, random
+import pygame, sys, random
 '''---------------------------------CLASS CODE/SPRITES--------------------'''
 class Blob(pygame.sprite.Sprite):
-
     def __init__(self):
         super().__init__()
         self.image = pygame.transform.scale(pygame.image.load('Assets/sprite_0.png'), (150, 150))

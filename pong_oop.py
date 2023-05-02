@@ -10,7 +10,7 @@ class Player(pygame.sprite.Sprite):
 
 
     def update():
-        
+        pass
 
 class Opponent(Player):
     def __init__(self):
@@ -24,7 +24,7 @@ class Ball(pygame.sprite.Sprite):
         self.rect = self.image.getrect()
 
     def update():
-
+        pass
 
 '''---------------------------------SETUP-------------------------------'''
 # General setup
